@@ -3,9 +3,14 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Potelo\GuPayment\GuPaymentTrait;
 
 class User extends Authenticatable
 {
+    /**
+     * Adiciona o tratamento de assinaturas do iugu
+     */
+    use GuPaymentTrait;
     /**
      * The attributes that are mass assignable.
      *

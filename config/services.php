@@ -14,6 +14,8 @@ return [
     |
     */
 
+
+
     'mailgun' => [
         'domain' => env('MAILGUN_DOMAIN'),
         'secret' => env('MAILGUN_SECRET'),
@@ -38,5 +40,11 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+
+    'iugu' => [
+        'model'  => App\User::class,
+        'key' => env('IUGU_APIKEY'),
+        'signature_table' => env('GUPAYMENT_SIGNATURE_TABLE')
+    ]
 
 ];
