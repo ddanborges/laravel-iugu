@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c284a9c122da36c99a8b6597bdce7aa6",
-    "content-hash": "8b1485987e7c5949da82435d403e52e8",
+    "hash": "395752527cce688c2930eb9533e0173d",
+    "content-hash": "c350d77c93fd9f727618086ccdc1b574",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -160,6 +160,95 @@
                 "string"
             ],
             "time": "2015-11-06 14:35:42"
+        },
+        {
+            "name": "dompdf/dompdf",
+            "version": "v0.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dompdf/dompdf.git",
+                "reference": "cc06008f75262510ee135b8cbb14e333a309f651"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/cc06008f75262510ee135b8cbb14e333a309f651",
+                "reference": "cc06008f75262510ee135b8cbb14e333a309f651",
+                "shasum": ""
+            },
+            "require": {
+                "phenx/php-font-lib": "0.2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "include/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                },
+                {
+                    "name": "Brian Sweeney",
+                    "email": "eclecticgeek@gmail.com"
+                }
+            ],
+            "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
+            "homepage": "https://github.com/dompdf/dompdf",
+            "time": "2015-12-07 04:07:13"
+        },
+        {
+            "name": "iugu/iugu",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iugu/iugu-php.git",
+                "reference": "e22635ca112d2a5b003372d966261314135257ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iugu/iugu-php/zipball/e22635ca112d2a5b003372d966261314135257ed",
+                "reference": "e22635ca112d2a5b003372d966261314135257ed",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.2"
+            },
+            "require-dev": {
+                "simpletest/simpletest": "1.1.5"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/Iugu/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Iugu team and contributors",
+                    "homepage": "https://github.com/iugu/iugu-php/contributors"
+                }
+            ],
+            "description": "iugu PHP Library",
+            "homepage": "https://iugu.com",
+            "keywords": [
+                "api",
+                "iugu",
+                "pagamentos"
+            ],
+            "time": "2015-11-25 10:36:10"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -785,6 +874,84 @@
                 "random"
             ],
             "time": "2016-03-18 20:34:03"
+        },
+        {
+            "name": "phenx/php-font-lib",
+            "version": "0.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhenX/php-font-lib.git",
+                "reference": "c30c7fc00a6b0d863e9bb4c5d5dd015298b2dc82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/c30c7fc00a6b0d863e9bb4c5d5dd015298b2dc82",
+                "reference": "c30c7fc00a6b0d863e9bb4c5d5dd015298b2dc82",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "classes/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                }
+            ],
+            "description": "A library to read, parse, export and make subsets of different types of font files.",
+            "homepage": "https://github.com/PhenX/php-font-lib",
+            "time": "2014-02-01 15:22:28"
+        },
+        {
+            "name": "potelo/gu-payment",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Potelo/GuPayment.git",
+                "reference": "883cf518014d855059edcf0c7ab2fd0cbc1badfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Potelo/GuPayment/zipball/883cf518014d855059edcf0c7ab2fd0cbc1badfb",
+                "reference": "883cf518014d855059edcf0c7ab2fd0cbc1badfb",
+                "shasum": ""
+            },
+            "require": {
+                "dompdf/dompdf": "^0.6.1",
+                "iugu/iugu": "1.0.6",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Potelo\\GuPayment\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gabriel Peixoto",
+                    "email": "gabriel@potelo.com.br"
+                }
+            ],
+            "description": "GuPayment fornece uma interface para controlar assinaturas do iugu.com",
+            "keywords": [
+                "billing",
+                "iugu",
+                "laravel",
+                "pagamentos"
+            ],
+            "time": "2016-05-31 01:42:21"
         },
         {
             "name": "psr/log",
@@ -3152,7 +3319,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "potelo/gu-payment": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
