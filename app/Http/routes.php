@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('/subscribe', 'HomeController@subscribe');
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');

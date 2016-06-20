@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -29,6 +30,9 @@ class HomeController extends Controller
 
     public function subscribe(Request $request)
     {
-        return dd($request);
+        $user = Auth::user();
+
+        $user->newSubscription('main', 'mensal')->create($request->token);
+        
     }
 }

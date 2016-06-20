@@ -2,7 +2,8 @@
     <link rel="stylesheet" href="{{ asset('css/payment.css') }}">
 @endsection
 
-<form id="payment-form" target="_blank" action="{{ url('/subscription') }}" method="POST">
+<form id="payment-form" target="_blank" action="{{ url('/subscribe') }}" method="POST">
+    {{ csrf_field() }}
     <div class="usable-creditcard-form">
         <div class="wrapper">
             <div class="input-group nmb_a">
