@@ -26,4 +26,9 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function subscribe(Request $request)
+    {
+        return dd($request);
+    }
 }

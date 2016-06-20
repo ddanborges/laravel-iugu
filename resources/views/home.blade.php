@@ -8,7 +8,8 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    You are logged ixn!
+                    @include('subviews.payment-form')
                 </div>
             </div>
         </div>
