@@ -9,6 +9,9 @@
 
                 <div class="panel-body">
                     You are logged ixn!
+                    @if (Auth::user()->subscribed('main'))
+                    <br> Você é assinante
+                    @endif
                     @include('subviews.payment-form')
                 </div>
             </div>

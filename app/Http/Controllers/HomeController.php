@@ -30,9 +30,12 @@ class HomeController extends Controller
 
     public function subscribe(Request $request)
     {
+        dd($request);
         $user = Auth::user();
 
-        $user->newSubscription('main', 'mensal')->create($request->token);
+        $user->newSubscription('main', 'mensal')
+            ->trialDays(0)
+            ->create($request->token);
         
     }
 }
